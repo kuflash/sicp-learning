@@ -8,7 +8,7 @@
 
 (define (sum-squares-of-max-values a b c)
   (cond 
-    ((and (< a b) (< a c))
+    ((and (or (< a b) (= a b)) (< a c))
       (+ (square b) (square c)))
     ((and (< b c) (< b a))
       (+ (square a) (square c)))
@@ -23,3 +23,6 @@
 (check-equal? (sum-squares-of-max-values 2 1 3) 13)
 (check-equal? (sum-squares-of-max-values 3 2 1) 13)
 (check-equal? (sum-squares-of-max-values 3 1 2) 13)
+(check-equal? (sum-squares-of-max-values 1 1 2) 5)
+(check-equal? (sum-squares-of-max-values 1 2 2) 8)
+(check-equal? (sum-squares-of-max-values 3 2 3) 18)
