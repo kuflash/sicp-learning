@@ -27,16 +27,16 @@
 )
 
 
-(cont-frac
-    (lambda (i) 1.0)
-    (lambda (i) 1.0)
-    10
-)
-(cont-frac-iterate
-    (lambda (i) 1.0)
-    (lambda (i) 1.0)
-    10
-)
+;;; (cont-frac
+;;;     (lambda (i) 1.0)
+;;;     (lambda (i) 1.0)
+;;;     10
+;;; )
+;;; (cont-frac-iterate
+;;;     (lambda (i) 1.0)
+;;;     (lambda (i) 1.0)
+;;;     10
+;;; )
 
 ;;; Необходимо 10 итераций чтобы получить φ с точностью до 4х знаков после запятой
 
